@@ -15,7 +15,7 @@ const envVarsSchema = joi.object({
     .falsy('false')
     .default(true),
   TYPE_ENV: joi.string()
-    .allow(['apiGateway', 'registration'])
+   .allow(['api', 'registration','frontend'])
     .required()	
 }).unknown()
   .required()
