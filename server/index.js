@@ -20,6 +20,7 @@ class AbstractServer{
 
 				/*Initialize server instance, from this property you can access to expressjs server object*/
 				var _serverInstance = express();
+				_serverInstance.use(require('../controllers'));
 				this.getServerInstance = function() { return _serverInstance; }
 
 
